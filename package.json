@@ -1,6 +1,6 @@
 {
   "name": "react-wechat-login",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React component for website login by Wechat",
   "main": "index.ts",
   "scripts": {
@@ -8,5 +8,12 @@
   },
   "keywords": ["react", "wechat", "login", "website"],
   "author": "Philip Wu",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.8.1",
+    "@types/react-dom": "^16.0.11",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "typescript": "^3.3.1"
+  }
 }
