@@ -1,19 +1,43 @@
 {
   "name": "react-wechat-login",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "React component for website login by Wechat",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
   },
-  "keywords": ["react", "wechat", "login", "website"],
-  "author": "Philip Wu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philwu/react-wechat-login.git"
+  },
+  "keywords": [
+    "react",
+    "wechat",
+    "login",
+    "website"
+  ],
+  "author": {
+    "name": "Philip Wu",
+    "email": "philw@philw.cn"
+  },
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^16.8.1",
-    "@types/react-dom": "^16.0.11",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "typescript": "^3.3.1"
-  }
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.5",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "rollup": "^2.48.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "files": ["dist"]
 }

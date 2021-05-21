@@ -1,3 +1,5 @@
+import * as React from "react";
+
 const WechatLogin = ({
   appid,
   redirect_uri,
