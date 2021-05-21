@@ -1,1 +1,3 @@
-export * from "./src/react-wechat-login";
+import WechatLogin from "./src/react-wechat-login";
+
+export default WechatLogin;

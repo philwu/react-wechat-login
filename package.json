@@ -1,17 +1,12 @@
 {
   "name": "react-wechat-login",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for website login by Wechat",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "react",
-    "wechat",
-    "login",
-    "website"
-  ],
+  "keywords": ["react", "wechat", "login", "website"],
   "author": "Philip Wu",
   "license": "MIT"
 }
