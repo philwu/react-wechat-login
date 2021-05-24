@@ -35,11 +35,11 @@ const loginWechatRes = (res) => {
 
 **\*\*Important:\*\***
 
-In order to transfer the response message between iframe and parent page, the returned html from the backend mush call the `parent.postMessage()`. Please check this [example](https://github.com/philwu/react-wechat-login/tree/main/example)
+In order to transfer the response message between iframe and parent page, the returned html from the backend must call the `parent.postMessage()`. Please check this [example](https://github.com/philwu/react-wechat-login/tree/main/example)
 
 ## Customize style of QR
 
-Based on the [document on the Wechat Open Platform](https://developers.weixin.qq.com/doc/oplatform/Website_App/WeChat_Login/Wechat_Login.html), you can customize the style of the QR code image by providing the location of your css file. That means you need to create a css file in the `public` folder and provide the URI to the `css` prop.
+Based on the [document on the Wechat Open Platform](https://developers.weixin.qq.com/doc/oplatform/Website_App/WeChat_Login/Wechat_Login.html), you can customize the style of the QR code image by providing the URI of your css file. That means you need to create a css file in the `public` folder and provide the URI to the `css` prop.
 
 If you don't provide this file, the following default style will be applied:
 
