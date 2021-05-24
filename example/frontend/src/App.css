@@ -1,0 +1,20 @@
+.App {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.left {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+
+.right {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}

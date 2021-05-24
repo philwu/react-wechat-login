@@ -1,0 +1,30 @@
+html {
+  overflow: hidden;
+}
+.impowerBox .qrcode {
+  width: 150px;
+  margin-top: 0px;
+}
+.impowerBox .title {
+  display: none;
+}
+.impowerBox .info {
+  width: 190px;
+}
+.status_icon {
+  display: none;
+}
+.impowerBox .status {
+  padding: 0;
+  text-align: center;
+}
+.impowerBox .status .status_icon {
+  display: none;
+}
+.impowerBox .status .status_txt h4 {
+  font-size: 14px;
+}
+#wx_default_tip p {
+  font-size: 14px;
+  font-weight: bold;
+}
