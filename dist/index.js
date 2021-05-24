@@ -51,9 +51,9 @@ var __assign = function() {
 };
 
 var WechatLogin = function (_a) {
-    var appid = _a.appid, redirect_uri = _a.redirect_uri, state = _a.state, style = _a.style, css = _a.css, onSuccess = _a.onSuccess;
+    var appid = _a.appid, redirectUri = _a.redirectUri, state = _a.state, style = _a.style, css = _a.css, onSuccess = _a.onSuccess;
     var sent = false;
-    var url = new URL(redirect_uri);
+    var url = new URL(redirectUri);
     window.addEventListener("message", function (event) {
         if (event.origin === url.origin && //确认消息来自于自己的域名 Make sure the message posted from your own origin
             !event.data.source && //过滤掉一些调试组件发来的信息  Filter out some devtools message
@@ -64,19 +64,22 @@ var WechatLogin = function (_a) {
         }
     });
     appid = "appid=" + appid;
-    redirect_uri = "&redirect_uri=" + encodeURIComponent(redirect_uri);
+    redirectUri = "&redirect_uri=" + encodeURIComponent(redirectUri);
     var scope = "&scope=snsapi_login";
     state = state ? "&state=" + state : "";
     style = style
-        ? __assign({ height: "200px", width: "200px" }, style) : { height: "200px", width: "200px" };
+        ? __assign({ height: "390px", width: "300px" }, style) : { height: "390px", width: "300px" };
     css = css ? "&href=" + css : "";
     var src = "https://open.weixin.qq.com/connect/qrconnect?self_redirect=true&" +
         appid +
-        redirect_uri +
+        redirectUri +
         scope +
         state +
         css;
-    return (React__namespace.createElement("iframe", { id: "frame_wechatlogin", title: "WechatLogin", src: src, frameBorder: "0", style: __assign({}, style) }));
+    return (React__namespace.createElement("iframe", { 
+        // generate a random id for the ifrom in case there are more than one react-wechat-login in one page
+        // 随机生成一个iframe的id，以应对同一个页面中有两个登录控件的情况
+        id: "f_wechatlogin_" + Math.floor(Math.random() * 1000000), title: "WechatLogin", src: src, frameBorder: "0", style: __assign({}, style) }));
 };
 
 exports.default = WechatLogin;

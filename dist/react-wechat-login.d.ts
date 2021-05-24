@@ -1,12 +1,10 @@
 /// <reference types="react" />
-declare const WechatLogin: ({ appid, redirect_uri, state, style, css, onSuccess, }: {
+declare const WechatLogin: ({ appid, redirectUri, state, style, css, onSuccess, }: {
     appid: string;
-    redirect_uri: string;
+    redirectUri: string;
     state?: string | undefined;
     style?: {} | undefined;
     css?: string | undefined;
-    height?: string | undefined;
-    width?: string | undefined;
     onSuccess: (v: string) => void;
 }) => JSX.Element;
 export default WechatLogin;

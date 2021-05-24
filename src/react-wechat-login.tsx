@@ -2,23 +2,21 @@ import * as React from "react";
 
 const WechatLogin = ({
   appid,
-  redirect_uri,
+  redirectUri,
   state,
   style,
   css,
   onSuccess,
 }: {
   appid: string;
-  redirect_uri: string;
+  redirectUri: string;
   state?: string;
   style?: {};
   css?: string;
-  height?: string;
-  width?: string;
   onSuccess: (v: string) => void;
 }) => {
   let sent = false;
-  const url = new URL(redirect_uri);
+  const url = new URL(redirectUri);
   window.addEventListener("message", (event) => {
     if (
       event.origin === url.origin && //确认消息来自于自己的域名 Make sure the message posted from your own origin
@@ -30,23 +28,25 @@ const WechatLogin = ({
     }
   });
   appid = `appid=${appid}`;
-  redirect_uri = `&redirect_uri=${encodeURIComponent(redirect_uri)}`;
+  redirectUri = `&redirect_uri=${encodeURIComponent(redirectUri)}`;
   const scope = `&scope=snsapi_login`;
   state = state ? `&state=${state}` : ``;
   style = style
-    ? { height: "200px", width: "200px", ...style }
-    : { height: "200px", width: "200px" };
+    ? { height: "390px", width: "300px", ...style }
+    : { height: "390px", width: "300px" };
   css = css ? `&href=${css}` : ``;
   const src =
     `https://open.weixin.qq.com/connect/qrconnect?self_redirect=true&` +
     appid +
-    redirect_uri +
+    redirectUri +
     scope +
     state +
     css;
   return (
     <iframe
-      id="frame_wechatlogin"
+      // generate a random id for the ifrom in case there are more than one react-wechat-login in one page
+      // 随机生成一个iframe的id，以应对同一个页面中有两个登录控件的情况
+      id={"f_wechatlogin_" + Math.floor(Math.random() * 1000000)}
       title="WechatLogin"
       src={src}
       frameBorder={"0"}
