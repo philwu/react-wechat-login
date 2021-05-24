@@ -1,8 +1,7 @@
 import WechatLogin from "react-wechat-login";
 import "./App.css";
 
-// const APPID = "YOUR_APP_ID";
-const APPID = "wx769f8185794d03c3";
+const APPID = "YOUR_APP_ID";
 
 function App() {
     const loginWechatRes = (res) => {
