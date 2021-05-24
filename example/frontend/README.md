@@ -1,8 +1,8 @@
 # react-wechat-login-example
 
-Example for react-wechat-login
+react-wechat-login 前端示例
 
-## Usage
+## 用法
 
 ```bash
 yarn
