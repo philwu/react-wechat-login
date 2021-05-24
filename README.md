@@ -1,5 +1,7 @@
 # react-wechat-login
 
+English | [中文](https://github.com/philwu/react-wechat-login/blob/main/README_zh.md)
+
 React component for website login by Wechat
 
 ## Installation
