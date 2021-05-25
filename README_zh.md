@@ -41,7 +41,7 @@ const loginWechatRes = (res) => {
 
 根据微信开放平台的 [文档](https://developers.weixin.qq.com/doc/oplatform/Website_App/WeChat_Login/Wechat_Login.html)，我们可以自定义二维码的样式。只需在 `public` 文件夹中建立一个 css 文件，然后把 URI 地址输入到组件的 `css` 属性中即可。
 
-如果不提供这个文件，二维码会使用以下默认的样式：
+以下是一个 css 样式文件的示例：
 
 ```css
 .impowerBox .qrcode {
