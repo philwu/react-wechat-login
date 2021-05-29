@@ -18,7 +18,8 @@
     "login",
     "website",
     "weixin",
-    "wx"
+    "wx",
+    "wx-login"
   ],
   "author": {
     "name": "Philip Wu",
