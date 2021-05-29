@@ -71,3 +71,7 @@ An example of css file is following:
 | state       |         | string        | the state sent back to the backend                                                           |
 | style       |         | CSSProperties | the style of the iframe element                                                              |
 | css         |         | string        | the location of css file for customizing style of QR code                                    |
+
+## Welcome submit issues
+
+[https://github.com/philwu/react-wechat-login/issues](https://github.com/philwu/react-wechat-login/issues)

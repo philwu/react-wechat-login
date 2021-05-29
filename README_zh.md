@@ -71,3 +71,7 @@ const loginWechatRes = (res) => {
 | state       |         | string        | 传给后台的 state                                               |
 | style       |         | CSSProperties | iframe 的样式                                                  |
 | css         |         | string        | 自定义二维码样式文件                                           |
+
+## 如有问题或建议，欢迎提交 issues
+
+[https://github.com/philwu/react-wechat-login/issues](https://github.com/philwu/react-wechat-login/issues)
